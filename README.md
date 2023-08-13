@@ -5,7 +5,7 @@ The Arduino Sketch running over the device implements the various functionalitie
 
 ## Components
 1. Arduino UNO
-2. Pulse sensor/ Heartbeat sensor
+2.  Max30100 pulse oximeter and heart rate sensor
 3. Temperature sensor
 4. ESP8266
 5. LCD display
