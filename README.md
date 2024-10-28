@@ -1,14 +1,57 @@
 # Health Monitoring System
-With tons of new healthcare technology start-ups, IoT is rapidly revolutionizing the healthcare industry. In this project, we have designed the IoT Based Patient Health Monitoring System using ESP8266 & Arduino. The IoT platform used in this project is ThingSpeak. ThingSpeak is an open-source Internet of Things (IoT) application and API to store and retrieve data from things using the HTTP protocol over the Internet or via a Local Area Network. This IoT device could read the pulse rate and measure the surrounding temperature. It continuously monitors the pulse rate and surrounding temperature and updates them to an IoT platform.
 
-The Arduino Sketch running over the device implements the various functionalities of the project like reading sensor data, converting them into strings, passing them to the IoT platform, and displaying measured pulse rate and temperature on character LCD.
+This project is an IoT-based health monitoring system that measures heart rate and temperature using a Pulse Sensor and an analog temperature sensor. The system displays real-time data on an LCD screen and sends the information to ThingSpeak for remote monitoring.
 
-## Components
-1. Arduino UNO
-2.  Max30100 pulse oximeter and heart rate sensor
-3. Temperature sensor
-4. ESP8266
-5. LCD display
+## Features
 
-## Software
-Arduino IDE   
+- Real-time heart rate monitoring using a Pulse Sensor.
+- Temperature measurement in Fahrenheit using an analog temperature sensor.
+- LCD display showing heart rate (BPM) and temperature.
+- Sends data to ThingSpeak for remote monitoring via ESP8266 Wi-Fi module.
+- Visual and auditory indicators for heartbeats.
+
+## Hardware Required
+
+- Arduino board (e.g., Arduino Uno)
+- Pulse Sensor
+- Analog temperature sensor
+- 16x2 LCD
+- ESP8266 Wi-Fi module
+- Resistors (if necessary)
+- Breadboard and jumper wires
+
+## Circuit Diagram
+
+![Circuit-Diagram](https://github.com/user-attachments/assets/35a81cd3-3a1b-40d9-911e-af67c85ccb4b)
+/assets/87eecf58-42e6-4b7d-b351-5487595a003d)
+
+## Hardware Setup
+
+1. Connect the Pulse Sensor purple wire to analog pin A0.
+2. Connect the temperature sensor to analog pin A1.
+3. Connect the LCD pins as follows:
+   - RS -> Pin 12
+   - EN -> Pin 11
+   - D4 -> Pin 5
+   - D5 -> Pin 4
+   - D6 -> Pin 3
+   - D7 -> Pin 2
+4. Connect the ESP8266 module (TX, RX) to pins 9 and 10 respectively.
+5. Connect the power and ground pins accordingly.
+
+![IMG_20181211_001750-768x441](https://github.com/user-attachments/assets/90c45df1-a595-49c7-9cbd-fdb9851fcc2d)
+
+## Result Display
+
+Upon running the system, the LCD displays real-time heart rate and temperature readings. Additionally, the data is sent to ThingSpeak for monitoring. 
+
+### ThingSpeak Output
+
+![Thinspeak-graph](https://github.com/user-attachments/assets/d7323bb9-24e2-4f41-90a8-06b9002b0d45)
+
+## Usage
+
+1. Upload the code to your Arduino board.
+2. Connect the hardware as described in the setup.
+3. Open the Serial Monitor to view real-time heart rate and temperature readings.
+4. Monitor the data on ThingSpeak for remote access.
