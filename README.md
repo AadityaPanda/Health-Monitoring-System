@@ -23,7 +23,6 @@ This project is an IoT-based health monitoring system that measures heart rate a
 ## Circuit Diagram
 
 ![Circuit-Diagram](https://github.com/user-attachments/assets/35a81cd3-3a1b-40d9-911e-af67c85ccb4b)
-/assets/87eecf58-42e6-4b7d-b351-5487595a003d)
 
 ## Hardware Setup
 
